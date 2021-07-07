@@ -1,0 +1,30 @@
+version: '3.0'
+services:
+  slash_worker:
+    image: node:16.3-buster-slim
+    #build:
+    #  context: .
+    #  dockerfile: DockerfileDEV
+    environment:
+      VS_ENV: 'dev'
+
+    volumes:
+      - './:/home/node'
+      #- './entrypoint.sh:/usr/local/bin/entrypoint.sh'
+    command: ['tail', '-f', '/dev/null']
+    #command: ['entrypoint.sh']
+
+    #ports :
+    #  - 9203:9203
+
+    networks:
+      - default
+      - backend
+
+networks:
+  default:
+    external:
+      name: dexnetwork
+  backend:
+    external:
+      name: dexnetworkbackend

@@ -1,0 +1,17 @@
+interface _output {
+    Holders : string,
+    Price : Number
+}
+
+export const MillionsTokenQuery = async (): Promise<_output> => {
+    const apiUrl = `https://tokenservice.elsehost.com/techlead`;
+    const init = {
+        headers: {
+            "content-type": "application/json;charset=UTF-8",
+        },
+    }
+    const response = await fetch(apiUrl, init);
+    const responseBody:_output = await response.json()
+
+    return responseBody
+}

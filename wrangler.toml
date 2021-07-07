@@ -1,0 +1,7 @@
+name = "discord-slash-demo"
+type = "webpack"
+account_id = "3fbfd40ef60f0abb68049040ea87eeab"
+workers_dev = true
+route = ""
+zone_id = ""
+webpack_config = "webpack.config.js"
