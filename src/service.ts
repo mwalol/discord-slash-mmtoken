@@ -4,7 +4,7 @@ interface _output {
 }
 
 export const MillionsTokenQuery = async (): Promise<_output> => {
-    const apiUrl = `https://tokenservice.elsehost.com/techlead`;
+    const apiUrl = process.env.Endpoint;
     const init = {
         headers: {
             "content-type": "application/json;charset=UTF-8",
