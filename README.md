@@ -1,5 +1,7 @@
-# Discord Slash Command Demo with Cloudflare Workers
+## Discord Slash bot for Millions Token
 
-Refer to [cf-workers-discord-bot](https://github.com/glenstack/glenstack/tree/master/packages/cf-workers-discord-bot)
+wrangler secret put APPLICATIONID
+wrangler secret put APPLICATIONSECRET
+wrangler secret put PUBLICKEY
 
-And this video [EASILY Build a Discord Slash Command Bot with Cloudflare Workers!! Deploy FREE!](https://youtu.be/xRt9PwphmY8)
+wrangler publish

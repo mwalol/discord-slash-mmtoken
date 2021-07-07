@@ -1,9 +1,10 @@
 {
-  "name": "pname",
+  "name": "discordbotslash",
   "version": "1.0.0",
   "description": "Cloudflare worker TypeScript template",
   "main": "index.js",
   "scripts": {
+    "publish": "wrangler publish",
     "build": "webpack",
     "dev": "NODE_ENV=development npm run build",
     "format": "prettier --write '**/*.{ts,js,css,json,md}'",
