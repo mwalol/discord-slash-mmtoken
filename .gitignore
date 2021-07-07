@@ -5,3 +5,4 @@ worker
 .env
 docker-compose.yml
 src/old
+yarn.lock
